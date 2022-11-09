@@ -1,0 +1,9 @@
+class Animal(object):
+    def __init__(self, AnimalName):
+       print(AnimalName, 'has two eyes.')    
+class Fish(Animal):
+    def __init__(self):
+        print('Fish has no legs,cannot walk maybe swim.')
+        super().__init__('Fish')
+    
+f1 = Fish()
